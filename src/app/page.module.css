@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Roboto;
+  src: url('/Roboto-Bold.ttf');
+}
+
+.main {
+  /* font-family: 'Roboto'; */
+  display: flex;
+  min-height: 100vh;
+}
+
+.menu {
+  width: 150px;
+  background-color: #191718;
+  min-height: 100vh;
+  color: #aaaaaa;
+  font-size: 16px;
+}
+.menu_options {
+  padding: 14px 71px 11px 16px;
+  border-bottom: 1px solid #5c5c5c;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu_options:hover {
+  color: white;
+  background: #5c5c5c;
+}
+.content {
+  width: calc(100vw - 150px);
+  padding: 20px 129px 0px 129px;
+}
+
+.header {
+  margin: auto;
+  width: 310px;
+}
+
+.description {
+  background: #efefef;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 100px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.title_description {
+  margin: auto;
+  color: #000000;
+}
+
+.card_item {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1366px) {
+  .description {
+    font-size: 12px;
+    padding: 30px 40px;
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .card_item {
+    display: block;
+  }
+  .content {
+    padding: 10px 60px 0px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 10px 25px 0px 25px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .main {
+    display: inherit;
+  }
+  .menu {
+    width: 100%;
+    min-height: 100%;
+  }
+  .menu_options {
+    padding: 14px 71px 11px 16px;
+    border-bottom: 1px solid #5c5c5c;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .content {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .header {
+    margin: auto;
+    width: 200px;
+  }
+  .header img {
+    width: 200px;
+    height: 120px;
+  }
+  .description {
+    margin-top: 0px;
+  }
+}

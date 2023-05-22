@@ -1,0 +1,43 @@
+.card_wrapper {
+  margin-right: 50px;
+}
+
+.card_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 18px;
+}
+
+.card_description {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 18.75px;
+}
+
+.card_imgUrl {
+  margin-right: 16px;
+  float: left;
+}
+
+@media screen and (max-width: 1366px) {
+  .card_title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .card_description {
+    font-size: 12px;
+  }
+  .card_imgUrl img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .card_wrapper {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+}
